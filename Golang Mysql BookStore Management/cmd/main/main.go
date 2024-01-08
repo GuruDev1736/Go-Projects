@@ -1,10 +1,9 @@
 package main
 
 import (
+	"Guruprasad/pkg/routes"
 	"log"
 	"net/http"
-
-	"Guruprasad/pkg/routes"
 
 	"github.com/gorilla/mux"
 )
@@ -15,5 +14,3 @@ func main() {
 	http.Handle("/", r)                        // handle the root and return the router
 	log.Fatal(http.ListenAndServe(":8080", r)) // listen at the port 8080
 }
-
-
